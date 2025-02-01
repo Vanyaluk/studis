@@ -5,6 +5,8 @@
     font-family: "Montserrat", sans-serif;
 }
 
+/* Header */
+
 header {
     background-color: rgba(12, 12, 12, 1);
     padding: 1px;
@@ -14,7 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 50px;
+    margin: 30px 100px;
     padding-bottom: 25px;
     border-bottom: 1.3px solid rgba(255, 255, 255, 1);
 }
@@ -31,7 +33,7 @@ header {
 
 .header-nav-link {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     text-decoration: none;
     transition: color 0.2s;
@@ -59,4 +61,160 @@ header {
 
 body {
     background-color: rgba(12, 12, 12, 1);
+}
+
+
+/* About Page */
+
+.about-background-container {
+    background-color: rgb(61, 33, 218, 1);
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 150px;
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.large-title {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.about-page-bg {
+    background-color: rgba(217, 217, 217, 1);
+    margin: 0px 100px;
+    border-radius: 11px;
+    display: flex;
+}
+
+.basic-text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.about-page-container {
+    padding: 20px 24px;
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-page-text {
+    font-weight: 900;
+    font-size: 28px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 50%;
+}
+
+.details-page {
+    margin: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.details-page-counts {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .details-page-counts {
+        flex-direction: column;
+    }
+}
+
+.details-page-count-elem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mini-header {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+/* Форма обратной связи */
+
+.form-page {
+    display: flex;
+    justify-content: left;
+    margin: 200px 100px;
+    gap: 10%;
+}
+
+
+.form-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+
+.base-input {
+    border: none;
+    background-color: rgba(12, 12, 12, 1);
+    border-bottom: solid 2px white;
+    color: white;
+    padding: 10px 6px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.base-input:focus {
+    outline: none;
+}
+
+#message {
+    resize: none;
+    border: none;
+    background-color: rgba(12, 12, 12, 1);
+    border-bottom: solid 2px white;
+    color: white;
+    padding: 10px 6px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#message:focus {
+    outline: none !important;
+}
+
+.form-button {
+    color: white;
+    width: 200px;
+    margin: 20px 10px;
+    padding: 12px 10px;
+    background-color: rgba(12, 12, 12, 1);
+    border: solid 2px white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.2s;
+    -webkit-transition: background-color 200ms linear;
+}
+
+.form-button:hover {
+    color: rgba(12, 12, 12, 1);
+    background-color: white;
 }

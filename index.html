@@ -6,7 +6,9 @@
     <title>Portfilio</title>
     <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,5 +25,71 @@
             </nav>
         </div>
     </header>
+
+    <main>
+        <div class="about-page">
+            <div class="about-page-bg">
+                <div class="about-background-container">
+                    <h1 class="large-title">Индивидуальные решения для бизнеса</h1>
+
+                    <p class="basic-text">
+                        Дизайн, мобильная разработка, веб-разработка, микросервисы,  
+                        кросс-платформенные приложения. <br><br>
+                        Наши работы качественные, потому что в нашей команде студенты из лучших вузов страны. 
+                        И именно поэтому работы и дешевые, потому что их делают студенты. Всё просто :)
+                    </p>
+                </div>
+
+                <div class="about-page-container">
+                    <p id="about-page-text">Примеры работ soon...</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-page">
+            <p class="large-title">Наши преимущества</p>
+            <div class="details-page-counts">
+                <div class="details-page-count-elem">
+                    <p class="mini-header">Скорость</p>
+                    <p class="basic-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ex minima obcaecati impedit animi quod, enim, esse harum deserunt soluta numquam tempora qui eligendi. Quae.</p>
+                </div>
+
+                <div class="details-page-count-elem">
+                    <p class="mini-header">Цена</p>
+                    <p class="basic-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore assumenda eius esse eveniet, ad harum nihil. Nobis ducimus accusantium nemo, tempore eum non iure sapiente?</p>
+                </div>
+
+                <div class="details-page-count-elem">
+                    <p class="mini-header">Опыт</p>
+                    <p class="basic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi possimus odio, accusantium veniam qui et dolorum perspiciatis suscipit optio totam? Quo, perferendis ut. Ratione!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-page">
+            <div class="form-titles">
+                <p  class="large-title">Обсудим проект?</p>
+                <p class="basic-text">Заполните форму для обратной связи и мы Вам напишем. Она нужна для того, 
+                    чтобы ни один клиент не потерялся и все заказы выполнены.</p>
+            </div>
+
+            <div class="form-inputs">
+                <input type="text" class="base-input" placeholder="Ваше имя">
+                <input type="text" class="base-input" placeholder="Ваш телефон">
+                <input type="email" class="base-input" placeholder="Ваш email">
+                <textarea name="message" id="message" rows="1" placeholder="Краткое описание проекта"></textarea>
+                <script>
+                    const textarea = document.getElementById('message');
+                    textarea.addEventListener('input', function () {
+                        this.style.height = 'auto';
+                        this.style.height = (this.scrollHeight - 20) + 'px';
+                    });
+                </script>
+
+                <button type="button" class="form-button">Отправить</button>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
