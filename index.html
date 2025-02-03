@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfilio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="header-div">
             <div class="logo">
                 <h3>Лого</h3>
             </div>
-            
             <nav class="header-nav">
-                    <a href="index.html" class="header-nav-link">О нас</a>
-                    <a href="index.html" class="header-nav-link">Услуги</a>
-                    <a href="index.html" class="header-nav-link">Контакты</a>
-                    <a href="index.html" class="header-nav-contact">Связаться</a>
+                <a href="#about" class="header-nav-link">О нас</a>
+<a href="#services" class="header-nav-link">Услуги</a>
+<a href="#stages" class="header-nav-link">Этапы работы</a>
+<a href="#contact" class="header-nav-contact">Связаться</a>
             </nav>
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <!-- About Page -->
         <div class="about-page">
             <div class="about-page-bg">
                 <div class="about-background-container">
                     <h1 class="large-title">Индивидуальные решения для бизнеса</h1>
-
                     <p class="basic-text">
                         Дизайн, мобильная разработка, веб-разработка, микросервисы,  
                         кросс-платформенные приложения. <br><br>
@@ -39,41 +39,136 @@
                         И именно поэтому работы и дешевые, потому что их делают студенты. Всё просто :)
                     </p>
                 </div>
-
                 <div class="about-page-container">
                     <p id="about-page-text">Примеры работ soon...</p>
                 </div>
             </div>
         </div>
 
-        <div class="details-page">
+        <!-- Details Page -->
+        <div class="details-page" id = "about">
             <p class="large-title">Наши преимущества</p>
             <div class="details-page-counts">
                 <div class="details-page-count-elem">
                     <p class="mini-header">Скорость</p>
-                    <p class="basic-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ex minima obcaecati impedit animi quod, enim, esse harum deserunt soluta numquam tempora qui eligendi. Quae.</p>
+                    <p class="basic-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-
                 <div class="details-page-count-elem">
                     <p class="mini-header">Цена</p>
-                    <p class="basic-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore assumenda eius esse eveniet, ad harum nihil. Nobis ducimus accusantium nemo, tempore eum non iure sapiente?</p>
+                    <p class="basic-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                 </div>
-
                 <div class="details-page-count-elem">
                     <p class="mini-header">Опыт</p>
-                    <p class="basic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi possimus odio, accusantium veniam qui et dolorum perspiciatis suscipit optio totam? Quo, perferendis ut. Ratione!</p>
+                    <p class="basic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 </div>
             </div>
-
         </div>
 
-        <div class="form-page">
-            <div class="form-titles">
-                <p  class="large-title">Обсудим проект?</p>
-                <p class="basic-text">Заполните форму для обратной связи и мы Вам напишем. Она нужна для того, 
-                    чтобы ни один клиент не потерялся и все заказы выполнены.</p>
+        <!-- Accordion Blocks -->
+        <div class="accordion" id = "services">
+            <p class="accordion-title">Наши услуги</p>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Дизайн интерфейсов</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Создаем уникальные и удобные интерфейсы для ваших проектов.</p>
+                </div>
             </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Веб-разработка</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Разрабатываем современные веб-приложения под ваши задачи.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Мобильная разработка</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Создаем мобильные приложения для iOS и Android.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Микросервисы</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Проектируем масштабируемые микросервисные архитектуры.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Техническая поддержка</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Обеспечиваем поддержку ваших продуктов 24/7.</p>
+                </div>
+            </div>
+        </div>
 
+        <div class="accordion" id = "stages">
+            <p class="accordion-title">Этапы работы</p>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Анализ требований</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Изучаем ваши потребности и цели проекта.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Проектирование</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Создаем прототипы и техническую документацию.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Разработка</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Реализуем функционал согласно утвержденному плану.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Тестирование</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Проводим тестирование на всех этапах разработки.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Поддержка</span>
+                    <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                    <p>Обеспечиваем долгосрочную поддержку продукта.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Page -->
+        <div class="form-page" id = "contact">
+            <div class="form-titles">
+                <p class="large-title">Обсудим проект?</p>
+                <p class="basic-text">Заполните форму для обратной связи и мы Вам напишем.</p>
+            </div>
             <div class="form-inputs">
                 <input type="text" class="base-input" placeholder="Ваше имя">
                 <input type="text" class="base-input" placeholder="Ваш телефон">
@@ -86,10 +181,37 @@
                         this.style.height = (this.scrollHeight - 20) + 'px';
                     });
                 </script>
-
                 <button type="button" class="form-button">Отправить</button>
             </div>
         </div>
     </main>
+    <a id="scroll-to-top" href="#">&uarr;</a>
+    <script>
+        // JavaScript для аккордеона
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                item.classList.toggle('active');
+            });
+        });
+        const scrollToTopButton = document.getElementById('scroll-to-top');
+
+        // Показать или скрыть кнопку в зависимости от прокрутки
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollToTopButton.classList.add('active');
+            } else {
+                scrollToTopButton.classList.remove('active');
+            }
+        });
+        // Добавляем плавную прокрутку при клике на кнопку
+scrollToTopButton.addEventListener('click', (e) => {
+    e.preventDefault(); // Отменяем стандартное поведение ссылки
+    window.scrollTo({
+        top: 0, // Прокручиваем к верху страницы
+        behavior: 'smooth' // Делаем прокрутку плавной
+    });
+});
+    </script>
 </body>
 </html>
